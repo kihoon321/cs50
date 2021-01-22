@@ -1,0 +1,9 @@
+//2주차 팀미션 2번문제
+#include <stdio.h>
+#include <cs50.h>
+
+int main (void)
+{
+    float 만기금액 = get_float ("예금액을 입력해주세요.\n");
+    printf("1년 만기 시, 고객님의 수령액은 %.0f원 입니다.\n", 만기금액*1.012);
+}
