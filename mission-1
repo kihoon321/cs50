@@ -1,0 +1,16 @@
+//2주차 팀미션 1번문제
+#include <stdio.h>
+#include <cs50.h>
+
+int main (void)
+{
+   int 재고 = 5;
+   int 가격 = 10000;
+   float 부가세 = 1.1;
+   int 주문 = get_int("수박 주문량을 입력해주세요\n");
+
+   printf("주문건수: %i건\n", 주문);
+   printf("기존재고량: %i개\n", 재고);
+   printf("남은재고량: %i개\n", 재고 - 주문);
+   printf("매출액: %.0f원\n", 가격 * 주문 * 부가세);
+}
